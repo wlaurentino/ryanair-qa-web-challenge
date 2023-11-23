@@ -19,25 +19,25 @@ This project is part of a QA-Web-Challenge focused on testing the Ryanair websit
 ```
 python --version
 ```
-2. Install Robot Framework:
+2. Install Node.js:
+
+* Download and install [Node.js from its official website](https://nodejs.org/en/).
+* Ensure Node.js is successfully installed by checking the version:
+```
+node --version
+```
+3. Install Robot Framework:
 
 * Use pip, which comes pre-installed with Python 3.4 and newer, to install Robot Framework:
 
 ```
 pip install robotframework
 ```
-3. Install Browser Library:
+4. Install Browser Library:
 
 * The Browser Library is installed via pip:
 ```
 pip install robotframework-browser
-```
-4. Install Node.js:
-
-* Download and install [Node.js from its official website](https://nodejs.org/en/).
-* Ensure Node.js is successfully installed by checking the version:
-```
-node --version
 ```
 5. Initialize Browser Library:
 
@@ -59,7 +59,7 @@ robot -d results logs
 
 * Robot Framework automatically generates reports and logs after the execution of test cases. These reports provide detailed information about the test execution and are essential for analyzing test results.
 
-* For running a specific test file:
+* For running a specific test file, make sure to be in the same directory as the test.robot file:
 ```
 robot -d results tests/test.robot
 ```
